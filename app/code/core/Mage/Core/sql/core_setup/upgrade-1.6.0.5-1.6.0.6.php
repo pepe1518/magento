@@ -32,7 +32,7 @@ $installer->startSetup();
 /**
  * Create table 'core/email_queue'
  */
-$table = $installer->getConnection()
+/*$table = $installer->getConnection()
     ->newTable($installer->getTable('core/email_queue'))
     ->addColumn('message_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
          'identity'  => true,
@@ -67,12 +67,12 @@ $table = $installer->getConnection()
         ),
         array('entity_id', 'entity_type', 'event_type', 'message_body_hash'))
     ->setComment('Email Queue');
-$installer->getConnection()->createTable($table);
+$installer->getConnection()->createTable($table); */
 
 /**
  * Create table 'core/email_recipients'
  */
-$table = $installer->getConnection()
+/*$table = $installer->getConnection()
     ->newTable($installer->getTable('core/email_recipients'))
     ->addColumn('recipient_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
             'identity'  => true,
@@ -114,3 +114,4 @@ $installer->getConnection()->createTable($table);
 
 $installer->endSetup();
 
+*/
